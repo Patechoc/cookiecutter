@@ -33,7 +33,7 @@ A command-line utility that creates projects from **cookiecutters** (project
 templates), e.g. creating a Python package project from a Python package project template.
 
 * Documentation: https://cookiecutter.readthedocs.io
-* GitHub: https://github.com/audreyr/cookiecutter
+* GitHub: https://github.com/patechoc/cookiecutter
 * Free software: BSD license
 * PyPI: https://pypi.python.org/pypi/cookiecutter
 
@@ -63,9 +63,9 @@ Did someone say features?
         # You'll be prompted to enter values.
         # Then it'll create your Python package in the current working directory,
         # based on those values.
-        $ cookiecutter https://github.com/audreyr/cookiecutter-pypackage
+        $ cookiecutter https://github.com/patechoc/cookiecutter-pypackage
         # For the sake of brevity, repos on GitHub can just use the 'gh' prefix
-        $ cookiecutter gh:audreyr/cookiecutter-pypackage
+        $ cookiecutter gh:patechoc/cookiecutter-pypackage
 
 * Use it at the command line with a local template:
 
@@ -85,7 +85,7 @@ Did someone say features?
         cookiecutter('cookiecutter-pypackage/')
 
         # Create project from the cookiecutter-pypackage.git repo template
-        cookiecutter('https://github.com/audreyr/cookiecutter-pypackage.git')
+        cookiecutter('https://github.com/patechoc/cookiecutter-pypackage.git')
 
 * Directory names and filenames can be templated. For example::
 
@@ -100,8 +100,8 @@ Did someone say features?
     .. code-block:: json
 
         {
-            "full_name": "Audrey Roy",
-            "email": "audreyr@gmail.com",
+            "full_name": "Patrick Merlot",
+            "email": "patrick.merlot@gmail.com",
             "project_name": "Complexity",
             "repo_name": "complexity",
             "project_short_description": "Refreshingly simple static site generator.",
@@ -122,8 +122,8 @@ Did someone say features?
 
         default_context:
             full_name: "Audrey Roy"
-            email: "audreyr@gmail.com"
-            github_username: "audreyr"
+            email: "patrick.merlot@gmail.com"
+            github_username: "patechoc"
         cookiecutters_dir: "~/.cookiecutters/"
 
 * Cookiecutters (cloned Cookiecutter project templates) are put into
@@ -135,7 +135,7 @@ Did someone say features?
     .. code-block:: bash
 
         # Clone cookiecutter-pypackage
-        $ cookiecutter gh:audreyr/cookiecutter-pypackage
+        $ cookiecutter gh:patechoc/cookiecutter-pypackage
         # Now you can use the already cloned cookiecutter by name
         $ cookiecutter cookiecutter-pypackage
 
