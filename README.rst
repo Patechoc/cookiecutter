@@ -121,7 +121,7 @@ Did someone say features?
     .. code-block:: yaml
 
         default_context:
-            full_name: "Audrey Roy"
+            full_name: "Patrick Merlot"
             email: "patrick.merlot@gmail.com"
             github_username: "patechoc"
         cookiecutters_dir: "~/.cookiecutters/"
