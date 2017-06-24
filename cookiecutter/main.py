@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
 """
-cookiecutter.main
------------------
-
 Main entry point for the `cookiecutter` command.
 
 The code in this module is also a good example of how to use Cookiecutter as a
@@ -80,6 +77,9 @@ def cookiecutter(
         # prompt the user to manually configure at the command line.
         # except when 'no-input' flag is set
         context['cookiecutter'] = prompt_for_config(context, no_input)
+
+        # include template dir or url in the context dict
+        context['cookiecutter']['_template'] = template
 
         dump(config_dict['replay_dir'], template_name, context)
 

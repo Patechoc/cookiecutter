@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""
-cookiecutter.config
--------------------
-
-Global configuration handling
-"""
+"""Global configuration handling."""
 
 from __future__ import unicode_literals
 import copy
@@ -25,6 +20,7 @@ USER_CONFIG_PATH = os.path.expanduser('~/.cookiecutterrc')
 
 BUILTIN_ABBREVIATIONS = {
     'gh': 'https://github.com/{0}.git',
+    'gl': 'https://gitlab.com/{0}.git',
     'bb': 'https://bitbucket.org/{0}',
 }
 
@@ -44,10 +40,7 @@ def _expand_path(path):
 
 
 def get_config(config_path):
-    """
-    Retrieve the config from the specified path, returning it as a config dict.
-    """
-
+    """Retrieve the config from the specified path, returning a config dict."""
     if not os.path.exists(config_path):
         raise ConfigDoesNotExistException
 
@@ -76,7 +69,7 @@ def get_config(config_path):
 def get_user_config(config_file=None, default_config=False):
     """Return the user config as a dict.
 
-    If ``default_config`` is True, ignore ``config_file and return default
+    If ``default_config`` is True, ignore ``config_file`` and return default
     values for the config parameters.
 
     If a path to a ``config_file`` is given, that is different from the default

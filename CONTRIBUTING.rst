@@ -153,7 +153,8 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
-3. The pull request should work for Python 2.7, 3.3, 3.4, 3.5, and PyPy on Appveyor and Travis CI.
+3. The pull request should work for Python 2.7, 3.3, 3.4, 3.5, 3.6, and PyPy on
+   Appveyor and Travis CI.
 4. Check https://travis-ci.org/audreyr/cookiecutter/pull_requests and 
    https://ci.appveyor.com/project/audreyr/cookiecutter/history to ensure the tests pass for all supported Python versions and platforms.
 
@@ -373,6 +374,8 @@ Process: Pull Request merging and HISTORY.rst maintenance
 If you merge a pull request, you're responsible for updating `AUTHORS.rst` and `HISTORY.rst`
 
 When you're processing the first change after a release, create boilerplate following the existing pattern:
+
+.. code-block:: rest
 
     x.y.z (Development)
     ~~~~~~~~~~~~~~~~~~~

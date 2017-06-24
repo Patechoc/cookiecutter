@@ -8,6 +8,82 @@ History
 
 New Features:
 
+* Include template path or template URL in cookiecutter context under
+  ``_template``, thanks to `@aroig`_ (#774)
+* Add a URL abbreviation for GitLab template projects, thanks to `@hackebrot`_
+  (#963)
+
+Bug Fixes:
+
+* ???
+
+Other Changes:
+
+* Fix broken link to *Copy without Render* docs, thanks to `@coreysnyder04`_
+  (#912)
+* Improve debug log message for when a hook is not found, thanks to
+  `@raphigaziano`_ (#160)
+* Fix module summary and ``expand_abbreviations()`` doc string as per pep257,
+  thanks to `@terryjbates`_ (#772)
+* Update doc strings in ``cookiecutter/cli.py`` and ``cookiecutter/config.py``
+  according to pep257, thanks to `@terryjbates`_ (#922, #931)
+* Update doc string for ``is_copy_only_path()`` according to pep257, thanks to
+  `@mathagician`_ and `@terryjbates`_ (#935, #949)
+* Fix miscellaneous issues with building docs, thanks to `@stevepiercy`_ (#889)
+* Re-implement Makefile and update several make rules, thanks to `@hackebrot`_
+  (#930)
+* Fix broken link to pytest docs, thanks to `@eyalev`_ for the issue report and
+  `@devstrat`_ for the fix (#939, #940)
+* Add ``test_requirements.txt`` file for easier testing outside of tox, thanks
+  to `@ramnes`_ (#945)
+* Improve wording in *copy without render* docs, thanks to `@eyalev`_ (#938)
+* Added more cookiecutter templates to the mix:
+
+  * `cookiecutter-kata-cpputest`_ by `@13coders`_ (#901)
+  * `cookiecutter-kata-gtest`_ by `@13coders`_ (#901)
+  * `cookiecutter-pyramid-talk-python-starter`_ by `@mikeckennedy`_ (#915)
+  * `cookiecutter-android`_ by `@alexfu`_ (#890)
+  * `cookiecutter-lux-python`_ by `@alexkey`_ (#895)
+  * `cookiecutter-git`_ by `@tuxredux`_ (#921)
+  * `cookiecutter-ansible-role-ci`_ by `@ferrarimarco`_ (#903)
+  * `cookiecutter_dotfile`_ by `@bdcaf`_ (#925)
+  * `painless-continuous-delivery`_ by `@painless-software`_ (#927)
+  * `cookiecutter-molecule`_ by `@retr0h`_ (#954)
+  * `sublime-snippet-package-template`_ by `@agenoria`_ (#956)
+
+.. _cookiecutter-kata-gtest: https://github.com/13coders/cookiecutter-kata-gtest
+.. _cookiecutter-kata-cpputest: https://github.com/13coders/cookiecutter-kata-cpputest
+.. _`cookiecutter-pyramid-talk-python-starter`: https://github.com/mikeckennedy/cookiecutter-pyramid-talk-python-starter
+.. _`cookiecutter-android`: https://github.com/alexfu/cookiecutter-android
+.. _`cookiecutter-lux-python`: https://github.com/alexkey/cookiecutter-lux-python
+.. _`cookiecutter-git`: https://github.com/webevllc/cookiecutter-git
+.. _`cookiecutter_dotfile`: https://github.com/bdcaf/cookiecutter_dotfile
+.. _`cookiecutter-ansible-role-ci`: https://github.com/ferrarimarco/cookiecutter-ansible-role
+.. _`painless-continuous-delivery`: https://github.com/painless-software/painless-continuous-delivery
+.. _`cookiecutter-molecule`: https://github.com/retr0h/cookiecutter-molecule
+.. _`sublime-snippet-package-template`: https://github.com/agenoria/sublime-snippet-package-template
+
+.. _`@13coders`: https://github.com/13coders
+.. _`@coreysnyder04`: https://github.com/coreysnyder04
+.. _`@mikeckennedy`: https://github.com/mikeckennedy
+.. _`@alexfu`: https://github.com/alexfu
+.. _`@alexkey`: https://github.com/alexkey
+.. _`@tuxredux`: https://github.com/tuxredux
+.. _`@ferrarimarco`: https://github.com/ferrarimarco
+.. _`@eyalev`: https://github.com/eyalev
+.. _`@devstrat`: https://github.com/devstrat
+.. _`@mathagician`: https://github.com/mathagician
+.. _`@bdcaf`: https://github.com/bdcaf
+.. _`@ramnes`: https://github.com/ramnes
+.. _`@painless-software`: https://github.com/painless-software
+.. _`@retr0h`: https://github.com/retr0h
+.. _`@agenoria`: https://github.com/agenoria
+
+1.5.1 (2017-02-04) Alfajor
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+New Features:
+
 * Major update to installation documentation, thanks to `@stevepiercy`_ (#880)
 
 Bug Fixes:

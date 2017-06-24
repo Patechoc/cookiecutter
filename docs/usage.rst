@@ -16,7 +16,7 @@ Modify the variables defined in `cookiecutter.json`.
 
 Open up the skeleton project. If you need to change it around a bit, do so.
 
-You probably also want to create a repo, name it differently, and push it as 
+You probably also want to create a repo, name it differently, and push it as
 your own new Cookiecutter project template, for handy future use.
 
 Generate your project
@@ -42,8 +42,9 @@ To create a project from the cookiecutter-pypackage.git repo template::
 
     $ cookiecutter gh:audreyr/cookiecutter-pypackage
 
-Cookiecutter knows abbreviations for Github (``gh``) and Bitbucket (``bb``)
-projects, but you can also give it the full URL to any repository::
+Cookiecutter knows abbreviations for Github (``gh``), Bitbucket (``bb``), and
+GitLab (``gl``) projects, but you can also give it the full URL to any
+repository::
 
     $ cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
     $ cookiecutter git+ssh://git@github.com/audreyr/cookiecutter-pypackage.git
@@ -79,7 +80,7 @@ As of the Cookiecutter 0.7.0 release:
 
 * Your cloned cookiecutters are stored by default in your `~/.cookiecutters/`
   directory (or Windows equivalent). The location is configurable: see
-  :doc:`advanced_usage` for details.
+  :doc:`advanced/user_config` for details.
 
 Pre-0.7.0, this is how it worked:
 

@@ -106,6 +106,11 @@ Contributors
 * Nathan Cheung (`@cheungnj`_)
 * Abdó Roig-Maranges (`@aroig`_)
 * Steve Piercy (`@stevepiercy`_)
+* Corey (`@coreysnyder04`_)
+* Dmitry Evstratov (`@devstrat`_)
+* Eyal Levin (`@eyalev`_)
+* mathagician (`@mathagician`_)
+* Guillaume Gelin (`@ramnes`_)
 
 .. _`@cedk`: https://github.com/cedk
 .. _`@johtso`: https://github.com/johtso
@@ -200,3 +205,8 @@ Contributors
 .. _`@cheungnj`: https://github.com/cheungnj
 .. _`@aroig`: https://github.com/aroig
 .. _`@stevepiercy`: https://github.com/stevepiercy
+.. _`@coreysnyder04`: https://github.com/coreysnyder04
+.. _`@devstrat`: https://github.com/devstrat
+.. _`@eyalev`: https://github.com/eyalev
+.. _`@mathagician`: https://github.com/mathagician
+.. _`@ramnes`: https://github.com/ramnes
