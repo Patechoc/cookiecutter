@@ -5,6 +5,7 @@
 import os
 import sys
 import json
+import collections
 
 import click
 
@@ -17,6 +18,7 @@ from cookiecutter.exceptions import (
     FailedHookException,
     UndefinedVariableInTemplate,
     UnknownExtension,
+    InvalidZipRepository,
     RepositoryNotFound,
     RepositoryCloneFailed
 )
@@ -41,7 +43,7 @@ def validate_extra_context(ctx, param, value):
 
     # Convert tuple -- e.g.: (u'program_name=foobar', u'startsecs=66')
     # to dict -- e.g.: {'program_name': 'foobar', 'startsecs': '66'}
-    return dict(s.split('=', 1) for s in value) or None
+    return collections.OrderedDict(s.split('=', 1) for s in value) or None
 
 
 @click.command(context_settings=dict(help_option_names=[u'-h', u'--help']))
@@ -116,11 +118,13 @@ def main(
             output_dir=output_dir,
             config_file=config_file,
             default_config=default_config,
+            password=os.environ.get('COOKIECUTTER_REPO_PASSWORD')
         )
     except (OutputDirExistsException,
             InvalidModeException,
             FailedHookException,
             UnknownExtension,
+            InvalidZipRepository,
             RepositoryNotFound,
             RepositoryCloneFailed) as e:
         click.echo(e)
